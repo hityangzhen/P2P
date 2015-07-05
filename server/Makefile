@@ -24,8 +24,8 @@ ${PROG}:	${MAIN}.o ${TP}.o
 		${CXX} ${MAIN}.o ${TP}.o -o ${PROG} ${LDFLAGS}
 		rm *.o
 
-${MAIN}.o:	${MAIN}.c ${CFG}
-		${CXX} ${CFLAGS} -c ${MAIN}.c -o ${MAIN}.o
+${MAIN}.o:	${MAIN}.cc ${CFG}
+		${CXX} ${CFLAGS} -c ${MAIN}.cc -o ${MAIN}.o
 
 ${TP}.o:	${TP}.cc ${TP}.h
 		${CXX} ${CFLAGS} -c ${TP}.cc -o ${TP}.o
