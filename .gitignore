@@ -1,0 +1,13 @@
+# ignore *.o
+*.o
+
+# ignore *.txt
+*.txt
+
+#ignore temporary files
+*~
+
+#ignore logs
+*.log
+
+
